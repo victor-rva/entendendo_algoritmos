@@ -1,0 +1,1 @@
+Diretório dedicado aos códigos construidos para exemplificar os algoritmos do livro "Entendendo Algoritmos".
