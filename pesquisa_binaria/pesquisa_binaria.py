@@ -1,10 +1,14 @@
 def pesquisa_binaria(lista, item):
-    baixo = 0
-    alto = len(lista) - 1
+    """Realiza uma busca binária em uma lista ordenada para encontrar o índice de um item específico."""
+    baixo = 0 # índice inicial da lista
+    alto = len(lista) - 1 # índice final da lista
 
     while baixo <= alto:
-        meio = (baixo + alto) // 2
-        chute = lista[meio]
+        meio = (baixo + alto) // 2 # O operador // realiza uma divisão inteira, por isso é utilizado, pois os índices devem ser inteiros. 
+        # meio é o índice do elemento do meio da lista
+        print(f"Índices atuais - Baixo: {baixo}, Alto: {alto}, Meio: {meio}")
+        chute = lista[meio] # valor do meio da lista
+        print(f"Chute atual: {chute}")
         if chute == item:
             print(f"Item {item} encontrado na posição {meio}.")
             return meio
